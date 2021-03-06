@@ -1,0 +1,169 @@
+.header{
+  .header-inner{
+    .header-title{
+      font-size: 22px;
+      margin-top: 33px;
+    }
+  }
+  .header-nav{
+    justify-content: space-around;
+    .topics{
+      margin-left: 70px;
+      & a{
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+
+
+.main-view{
+  .left_content{
+    .left_content_title {
+    font-size: 28px;
+    }
+  }
+}
+
+.main_contents{
+  .container{
+    .main_contents_title{
+      font-size: 30px;
+    }
+    .first_content{
+      width: 90%;
+      & h2{
+        font-size: 26px;
+      }
+      .first_content_wrapper{
+        .first_left_content img{
+          width: 360px;
+          // margin-top: 10%;
+          // margin-left: 0%;
+        }
+
+        .first_right_content{
+          margin-left: 100px;
+          & h3{
+            font-size: 24px;
+          }
+          & p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+
+    .second_content{
+      width: 90%;
+      & h2{
+        font-size: 26px;
+      }
+      .second_content_wrapper{
+        .second_left_content{
+          margin-left: 20px;
+          width: 60%;
+
+          & h3{
+            font-size: 24px;
+          }
+          & p{
+            font-size: 16px;
+          }
+        }
+        .second_right_content img{
+          width: 350px;
+        }
+      }
+    }
+
+    .third_content{
+      & h2{
+        font-size: 26px;
+      }
+      .third_content_wrapper{
+        .third_left_content img{
+          // width: 350px;
+          margin-left: 40px;
+        }
+        .third_right_content{
+          margin-left: 30px;
+          // margin-right: auto;
+          & h3{
+            font-size: 24px;
+          }
+          & p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub_contents{
+  .price_list_wrapper{
+    .price_list{
+      width: 94%;
+    }
+    .price_list th,td{
+      font-size: 14px;
+    }
+  }
+}
+
+.faq{
+  .faq_container{
+    width: 94%;
+  }
+  .faq_list_wrapper{
+    .faq_list_detail_a{
+      font-size: 12px;
+      padding: 0 15px;
+    }
+  }
+}
+
+
+.blog{
+  .blog_inner{
+    padding-left:30px;
+    padding-right: 30px;
+
+    & h2{
+      font-size: 30px;
+    }
+    .item{
+      width: calc(33.33333333% - 20px * 2 / 3);
+      .item-info h2{
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+.works{
+  .works_inner{
+    .item-info2{
+      & h2{
+        font-size: 13px;
+      }
+
+      & p{
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.footer{
+  .upper_footer{
+    .contact_wrapper{
+      .contact_form{
+        width: 94%;
+      }
+    }
+  }
+}

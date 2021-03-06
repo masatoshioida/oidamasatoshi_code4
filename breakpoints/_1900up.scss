@@ -1,0 +1,62 @@
+// 1900ピクセル以上のモニターはこれ
+
+.blog{
+
+  .blog_inner{
+    max-width: 1500px;
+
+    .item{
+      height: 430px;
+    }
+
+    .item_info{
+
+      & h2 {
+        font-size: 20px !important;
+      }
+
+      & time{
+        top:400px;
+        left:330px;
+      }
+    }
+  }
+}
+
+
+.works{
+
+  .works_inner{
+    & h2{
+      padding-top: 20px;
+    }
+
+    & p{
+      margin-bottom: 40px;
+    }
+
+    .item-info2{
+      & h2{
+        font-size: 22px;
+      }
+
+      & p{
+        font-size: 17px;
+      }
+    }
+
+
+  }
+}
+
+.footer{
+  .upper_footer{
+    .contact_wrapper{
+      .contact_form{
+        max-width: 1360px;
+        padding-right: 150px;
+        padding-left: 150px;
+      }
+    }
+  }
+}
