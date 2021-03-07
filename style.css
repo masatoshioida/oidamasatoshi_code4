@@ -10,8 +10,8 @@ body a {
 
 .header {
   width: 100%;
-  height: 1079px;
-  background-color: #dddddd;
+  height: 80px;
+  position: fixed;
 }
 
 .header .header-inner {
@@ -41,7 +41,6 @@ body a {
 
 .header .header-inner .logo a {
   text-decoration: none;
-  color: #333;
 }
 
 .header .header-inner .logo img {
@@ -57,21 +56,79 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #333333;
+  color: #ffffff;
 }
 
 .header .header-inner .globalNav .topics a {
-  margin-right: 46px;
+  margin-right: 30px;
   font-size: 16px;
-  color: #333333;
-  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
   display: inline-block;
 }
 
 .header .header-inner a.button {
-  margin-bottom: 25px;
   display: inline-block;
-  margin-right: 0;
+  color: #ffffff;
+  display: block;
+  height: 54px;
+  width: 170px;
+  background: #978F10 0% 0% no-repeat padding-box;
+  text-align: center;
+  padding: 19px 0px 19px 0px;
+}
+
+.header .header-inner a.button img {
+  width: 22px;
+}
+
+.header .header-inner a.button p {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.top_contents {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 1079px;
+  background-image: url(images/mainbg01.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.top_contents .top_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  position: absolute;
+  width: 120px;
+  height: 400px;
+  top: 362px;
+  left: 67.34%;
+  background-image: unset;
+}
+
+.top_contents .top_contents .top_contents_sentence {
+  color: #ffffff;
+  display: inline-block;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 34px;
+  width: 40px;
+  height: 100%;
+  letter-spacing: 0.2em;
+  line-height: 3.5em;
+}
+
+.top_contents .top_contents .top_contents_sentence:nth-child(1) {
+  margin-left: 51px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .introduction {
@@ -79,14 +136,62 @@ body a {
   margin: 0 auto;
   height: 681px;
   background-color: moccasin;
+  background: transparent url("images/bg.png") 0% 0% no-repeat padding-box;
 }
 
 .introduction .intro_container {
-  margin: 0 auto;
+  max-width: 1180px;
+  margin-left: 353px;
+  margin-right: 387px;
+  height: 100%;
 }
 
-.introduction .intro_container .first_content {
-  font-size: large;
+.introduction .intro_container .intro_wrap {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-right: 101px;
+}
+
+.introduction .intro_container .intro_wrap .first_content {
+  margin-top: 64px;
+  font-size: 28px;
+  margin-left: 118px;
+}
+
+.introduction .intro_container .intro_wrap .first_content .fc .fc_sentence {
+  margin-left: 33px;
+  letter-spacing: 2;
+}
+
+.introduction .intro_container .intro_wrap .first_content .fc .fc_sentence:nth-child(2) {
+  margin-top: 85px;
+  margin-left: 0px;
+}
+
+.introduction .intro_container .intro_wrap .intro_second_container {
+  font-size: 16px;
+  margin-top: 149px;
+}
+
+.introduction .intro_container .intro_wrap .intro_second_container .second_content, .introduction .intro_container .intro_wrap .intro_second_container .third_content, .introduction .intro_container .intro_wrap .intro_second_container .forth_content {
+  margin-left: 118px;
+}
+
+.introduction .intro_container .intro_wrap .intro_second_container .second_content p, .introduction .intro_container .intro_wrap .intro_second_container .third_content p, .introduction .intro_container .intro_wrap .intro_second_container .forth_content p {
+  margin-left: 22px;
+}
+
+.introduction .intro_container .intro_wrap .intro_second_container .second_content p:nth-child(3), .introduction .intro_container .intro_wrap .intro_second_container .third_content p:nth-child(3), .introduction .intro_container .intro_wrap .intro_second_container .forth_content p:nth-child(3) {
+  margin-left: 0px;
+}
+
+.introduction .intro_container .intro_wrap .fifth_content {
+  margin-top: 443px;
+  font-size: 22px;
 }
 
 .main_contents {
