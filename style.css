@@ -395,7 +395,9 @@ body a {
 .plan {
   width: 100%;
   height: 775px;
-  background-color: #eefbfb;
+  background: url("images/bg02.png") 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: cover;
 }
 
 .plan .plan_inner {
@@ -405,19 +407,26 @@ body a {
   margin: 0 auto;
 }
 
-.plan .plan_inner .plan_title img {
+.plan .plan_inner .plan_title {
+  margin-bottom: 66px;
   text-align: center;
+}
+
+.plan .plan_inner .plan_title img {
+  padding-top: 60px;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .plan .plan_inner .plan_title h2 {
   text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: #333333;
+  font-size: 36px;
   line-height: 1.6;
 }
 
 .plan .plan_inner .wrapper_grid {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,23 +436,19 @@ body a {
 }
 
 .plan .plan_inner .item {
-  width: calc(33.33333333% - 30px * 2 / 3);
-  -webkit-box-shadow: 0px 3px 6px #00000029;
-          box-shadow: 0px 3px 6px #00000029;
+  width: calc(33.33333333% - 90px * 2 / 3);
   height: auto;
-  background-color: #ffffff;
-}
-
-.plan .plan_inner .item .item:nth-child(3) {
-  margin-right: 0;
 }
 
 .plan .plan_inner .item .item-image img {
-  width: 100%;
+  width: 331px;
+  height: 209px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .plan .plan_inner .item .item-info {
-  padding-top: 14px;
+  padding-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,20 +460,17 @@ body a {
 }
 
 .plan .plan_inner .item .item-info h2 {
-  padding-left: 18px;
-  padding-right: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333333;
+  font-size: 20px;
   line-height: 1.4;
   text-align: left;
+  margin-bottom: 36px;
 }
 
 .plan .plan_inner .item .item-info p {
-  margin-top: auto;
-  text-align: end;
-  padding-bottom: 10px;
-  padding-right: 32px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: -0.01em;
 }
 
 .news {
@@ -486,12 +488,24 @@ body a {
   background-color: wheat;
 }
 
+.news .news_container .news_title {
+  text-align: center;
+}
+
+.news .news_container .news_title img {
+  padding-top: 60px;
+  width: 40px;
+}
+
 .news .news_container .news_title h2 {
-  font-size: 22px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  margin-bottom: 46px;
 }
 
 .news .news_container .news_title a {
-  display: block;
+  font-size: 16px;
 }
 
 .news .news_container .news_list_wrapper {
