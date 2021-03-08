@@ -28,9 +28,6 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .header .header-inner .logo {
@@ -60,6 +57,7 @@ body a {
   display: -ms-flexbox;
   display: flex;
   color: #000000;
+  margin-left: 120px;
 }
 
 .header .header-inner .globalNav .topics a {
@@ -70,26 +68,34 @@ body a {
   display: inline-block;
 }
 
-.header .header-inner a.button {
-  display: inline-block;
+.header .header-inner .reserve {
+  margin: 0 0 0 auto;
+}
+
+.header .header-inner .reserve a.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #ffffff;
-  display: block;
   height: 54px;
   width: 170px;
   background: #978f10 0% 0% no-repeat padding-box;
   text-align: center;
-  padding: 19px 0px 19px 0px;
 }
 
-.header .header-inner a.button img {
+.header .header-inner .reserve a.button img {
+  margin-left: 37px;
   width: 22px;
+  height: 22px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.header .header-inner a.button p {
-  display: inline-block;
+.header .header-inner .reserve a.button p {
   color: #ffffff;
   font-size: 16px;
   margin-left: 10px;
+  padding: 19px 0px 19px 0px;
 }
 
 .top_contents {
