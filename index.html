@@ -252,54 +252,75 @@
     <div class="news_title">
       <a href=""><img src="images/logo02.png" alt=""></a>
       <h2 class="n_title">お知らせ</h2>
-      <a href="#">営業時間</a>
-      <a href="#">その他</a>
     </div>
     <div class="news_list_wrapper">
-      <div class="nl_item">
-        <figure class="nl-image"><img src="images/news01.png" alt=""></figure>
-        <div class="nl-info">
-          <time datetime="2020.12.24">2020.12.24</time>
-          <h2>年末最後の営業日は27日になります。</h2>
-        </div>
-      </div><!-- nl_item -->
-      <div class="nl_item">
-        <figure class="nl-image"><img src="images/news02.png" alt=""></figure>
-        <div class="nl-info">
-          <time datetime="2020.12.24">2020.12.24</time>
-          <h2>年末最後の営業日のお知らせ</h2>
-        </div>
-      </div><!-- nl_item -->
-      <div class="nl_item">
-        <figure class="nl-image"><img src="images/news02.png" alt=""></figure>
-        <div class="nl-info">
-          <time datetime="2020.12.11">2020.12.11</time>
-          <h2>12.21は臨時休業とさせていただきますので、よろしく<br>お願いします。</h2>
-        </div>
-      </div><!-- nl_item -->
-      <div class="nl_item">
-        <figure class="nl-image"><img src="images/news01.png" alt=""></figure>
-        <div class="nl-info">
-          <time datetime="2020.12.24">2020.12.24</time>
-          <h2>年末最後の営業日のお知らせ</h2>
-        </div>
-      </div><!-- nl_item -->
-      <div class="nl_item">
-        <figure class="nl-image"><img src="images/news01.png" alt=""></figure>
-        <div class="nl-info">
-          <time datetime="2020.12.01">2020.12.01</time>
-          <h2>和室の改装を行いますため、12.10はお休み<br>させていただきます。</h2>
-        </div>
-      </div><!-- nl_item -->
-      <div class="nl_item">
-        <figure class="nl-image"><img src="images/news02.png" alt=""></figure>
-        <div class="nl-info">
-          <time datetime="2020.12.24">2020.12.24</time>
-          <h2>年末最後の営業日のお知らせ</h2>
-        </div>
-      </div><!-- nl_item -->
-    </div>
-  </div><!-- news_container -->
+      <ul class="tab">
+        <li class="tab-item active">営業時間</li>
+        <li class="tab-item">その他</li>
+      </ul>
+      <div class="tab-content show">
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news01.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.24">2020.12.24</time>
+            <h2>年末最後の営業日は27日になります。</h2>
+          </div>
+        </div><!-- nl_item -->
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news02.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.24">2020.12.24</time>
+            <h2>年末最後の営業日のお知らせ</h2>
+          </div>
+        </div><!-- nl_item -->
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news02.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.11">2020.12.11</time>
+            <h2>12.21は臨時休業とさせていただきますので、よろしく<br>お願いします。</h2>
+          </div>
+        </div><!-- nl_item -->
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news01.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.24">2020.12.24</time>
+            <h2>年末最後の営業日のお知らせ</h2>
+          </div>
+        </div><!-- nl_item -->
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news01.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.01">2020.12.01</time>
+            <h2>和室の改装を行いますため、12.10はお休み<br>させていただきます。</h2>
+          </div>
+        </div><!-- nl_item -->
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news02.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.24">2020.12.24</time>
+            <h2>年末最後の営業日のお知らせ</h2>
+          </div>
+        </div><!-- nl_item -->
+      </div><!-- tab_content -->
+
+      <div class="tab-content">
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news02.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.24">2020.12.24</time>
+            <h2>年末最後の営業日のお知らせ</h2>
+          </div>
+        </div><!-- nl_item -->
+        <div class="nl_item">
+          <figure class="nl-image"><img src="images/news01.png" alt=""></figure>
+          <div class="nl-info">
+            <time datetime="2020.12.01">2020.12.01</time>
+            <h2>和室の改装を行いますため、12.10はお休み<br>させていただきます。</h2>
+          </div>
+        </div><!-- nl_item -->
+      </div>
+    </div><!-- news_list_wrapper -->
+  </div><!-- news_container tab-boxの代わり -->
 </section>
 
 
@@ -353,8 +374,10 @@
         <p class="post-num">〒000-0000</p>
         <p class="add">山形県鶴岡市xxxxxxxxxxx</p>
       </div>
-      <a href="000-0000-0000" class="calling2">TEL.000-0000-0000</a>
-      <a href="000-0000-0000" class="fax">FAX.00-0000-0000</a>
+      <div class="tel-wrap">
+        <p class="calling2">TEL.000-0000-0000</p>
+        <p class="fax">FAX.00-0000-0000</p>
+      </div>
     </div>
   </div><!--upper_footer-->
 
