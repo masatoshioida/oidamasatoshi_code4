@@ -12,11 +12,16 @@ body {
   }
 }
 
+// #header{
+//   position: relative;
+// }
+
 .header {
   width: 100%;
   height: 80px;
   z-index: 20;
   position: fixed;
+  transition: 0.2s;
   .header-inner {
     max-width: 1920px;
     margin: 0 auto;
@@ -29,12 +34,36 @@ body {
     .logo {
       display: flex;
       align-items: center;
+      transition: 0.2s;
       & a {
         text-decoration: none;
       }
       img {
         width: 200px;
         display: block;
+      }
+    }
+    .logo2{
+      img{
+        display: none;
+      }
+    }
+
+    .logo.headerScroll{
+      img{
+        display: none;
+        position: unset;
+        position: relative;
+      }
+    }
+    .logo2.headerScroll{
+      img{
+        display: block;
+        width: 200px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        transition: 0.2s;
       }
     }
 
@@ -46,12 +75,13 @@ body {
         color: #ffffff;
         margin-left: 120px;
 
-        & a {
+        a {
           margin-right: 30px;
           font-size: 16px;
           color: #ffffff;
           text-align: left;
           display: inline-block;
+          transition: 0.2s;
         }
         // & a:last-child{
         //   margin-right: 0px;
@@ -163,6 +193,21 @@ body {
   }
 }
 
+// header.scroll-nav, .globalNav, .topics a.topics_detail{
+//   color: #000000 ;
+  // & img{
+// background-color: #707070;
+  // }
+// }
+
+// .sticky-header{
+//   position: fixed;
+//   width: 100%;
+//   height: 80px;
+//   z-index: 9999;
+//   transition: 0.25s;
+// }
+
 .top_contents {
   max-width: 1920px;
   margin: 0 auto;
@@ -205,7 +250,7 @@ body {
     }
     66% {
       opacity: 0;
-      transform: scale(1.1);
+      transform: scale(1.05);
       z-index: 9;
     }
     100% {
@@ -352,6 +397,9 @@ body {
             font-size: 16px;
             line-height: 2.3;
             margin-bottom: 75px;
+          }
+          & a.button.no-color-change{
+            color:#000000;
           }
           & a.button {
             width: 200px;

@@ -141,3 +141,99 @@ $(function(){
     mode: "multiple"
   }
   flatpickr('.flatpickr', config);
+
+
+
+  // たぶ切り替え
+
+// $('#header').each(function(){
+//     var $window = $(window),
+//     $stickyHeader = $(this).find('.sticky-header'),//スティッキーヘッダー
+//     stickyHeaderHeight = $stickyHeader.outerHeight(),//スティッキーヘッダーの高さ
+//     headerHeight = $(this).outerHeight();//ヘッダー全体の高さ
+
+//     //画面外へ
+//     $stickyHeader.css({ top: '-' + stickyHeaderHeight + 'px' });
+
+//     //ページの一番上からヘッダーの高さ分下方向にスクロールしたらtopを0に、それ以外は画面外へ
+//     $window.on('scroll', function(){
+//         if($window.scrollTop() > headerHeight) {
+//             $stickyHeader.css({top:0});
+//         } else {
+//             $stickyHeader.css({ top: '-' + stickyHeaderHeight + 'px' });
+//        }
+//     });
+
+//     //任意のタイミングでイベントを発生させる
+//     $window.trigger('scroll');
+// });
+
+
+
+// window.addEventListener("scroll", function () {
+//   var header = document.querySelector("header");
+//   header.classList.toggle("scroll-nav", window.scrollY > 30);
+// });
+
+
+
+$(function() {
+  let header     = $('.header');
+  let headerLogo = $('.logo');
+  let navLink    = $('.list_item');
+  // let navSpan    = $('.global-nav__list--item').find('span');
+  // let navContact = $('.contact');
+
+  $(window).scroll(function () {
+    // 画面をトップから100px以上スクロールした時
+    if ($(this).scrollTop() >= 30) {
+      // ヘッダーのbackground-colorを白に変更し、boxshadowをつける
+      header.css({'background':'rgba(250, 250, 250, 1)'});
+      // ロゴ画像を変更
+      headerLogo.attr('src', 'images/sub-header-logo.png').css('width', 200);
+      // aタグで囲った文字を黒に変更
+      navLink.find('a').css('color', '#333');
+      // spanタグで囲った文字を黒に変更
+      // navSpan.css('color', '#333');
+      // CONTACTとお問い合わせの文字色のみ、白のまま固定
+      // navContact.find('a, span').css('color', '#fff');
+      // liタグにホバーした際、文字色を変更
+    //   // navLink.hover(
+    //   //   function() {
+    //   //     $(this).find('a, span').css('color', '#fff');
+    //   //   },
+    //   //   function() {
+    //   //     $(this).find('a, span').css('color', '#333');
+    //   //     navContact.find('a, span').css('color', '#fff');
+    //   //   }
+    // );
+    } else {
+      // 画面がトップから100px以下の時は、上記と逆の処理を行う
+      header.css({'background':'rgba(250, 250, 250, 0)'});
+      headerLogo.attr('src', 'images/top-header-logo.png').css('width', 200);
+      navLink.find('a').css('color', '#fff');
+      // navSpan.css('color', '#fff');
+      // navLink.hover(
+      //   function() {
+      //     $(this).find('a, span').css('color', '#fff');
+      //   },
+      //   function() {
+      //     $(this).find('a, span').css('color', '#fff');
+      //   }
+      // );
+    }
+  });
+});
+
+
+// スクロールするとロゴの色変更
+$(function () {
+  $(window).on("scroll", function () {
+    const sliderHeight = 30;
+    if (sliderHeight < $(this).scrollTop()) {
+      $(".js-header").addClass("headerScroll");
+    } else {
+      $(".js-header").removeClass("headerScroll");
+    }
+  });
+});
