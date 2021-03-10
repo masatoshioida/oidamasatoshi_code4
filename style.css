@@ -873,4 +873,131 @@ body a {
   font-size: 12px;
   color: #ffffff;
 }
+
+@media (max-width: 1024px) {
+  .top_contents {
+    height: 700px;
+  }
+  .top_contents .top_image {
+    display: none;
+  }
+  .introduction {
+    height: auto;
+  }
+  .introduction .intro_container {
+    width: 100%;
+  }
+  .introduction .intro_container .intro_wrap {
+    padding-right: 0px;
+    display: block;
+  }
+  .introduction .intro_container .intro_wrap .first_content {
+    margin-left: 3.5em;
+  }
+  .introduction .intro_container .intro_wrap .intro_second_container .second_content, .introduction .intro_container .intro_wrap .intro_second_container .third_content, .introduction .intro_container .intro_wrap .intro_second_container .forth_content {
+    margin-left: 4em;
+  }
+  .main_contents {
+    height: auto;
+  }
+  .main_contents .main_container .first_content {
+    height: auto;
+    width: 100%;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper {
+    display: block;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fl_content {
+    width: 100%;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fl_content img {
+    width: 92.865%;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content {
+    margin-top: 100px;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content p {
+    font-size: 14;
+    margin-bottom: 40px;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content a.button {
+    width: 150px;
+    height: 42px;
+    font-size: 14px;
+    padding: 13px 0 13px 0;
+  }
+  .main_contents .main_container .second_content {
+    height: auto;
+    width: 100%;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper {
+    margin-top: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content {
+    margin-left: 7.135%;
+    margin-top: 100px;
+    margin-right: 0px;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content p {
+    font-size: 14;
+    margin-bottom: 40px;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content a.button {
+    width: 150px;
+    height: 42px;
+    font-size: 14px;
+    padding: 13px 0 13px 0;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sr_content {
+    width: 100%;
+    text-align: right;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sr_content img {
+    width: 92.865%;
+  }
+  .main_contents .main_container .third_content {
+    height: auto;
+    width: 100%;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper {
+    display: block;
+    margin-top: 150px;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tl_content {
+    width: 100%;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tl_content img {
+    width: 92.865%;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content {
+    margin-top: 100px;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content p {
+    font-size: 14;
+    margin-bottom: 40px;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content a.button {
+    width: 150px;
+    height: 42px;
+    font-size: 14px;
+    padding: 13px 0 13px 0;
+    margin-bottom: 150px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
