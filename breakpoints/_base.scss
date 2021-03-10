@@ -3,6 +3,7 @@ $tifont: Hiragino Kaku Gothic ProN;
 
 body {
   width: 100%;
+  height: 7318px;
   margin: 0 auto;
   // max-width: 1366px;
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
@@ -125,6 +126,8 @@ body {
         height: 100vh;
         position: absolute;
         width: 100%;
+        padding: 0;
+        max-width: 2560px !important;
       }
       .modal__content{
         background: #fff;
@@ -203,7 +206,8 @@ body {
   // max-width: 1920px;
   margin: 0 auto;
   // height: 800px;
-  height: 1079px;
+  // height: 1079px;
+  height: 14.74%;
   overflow: hidden;
   position: relative;
 
@@ -376,7 +380,8 @@ body {
           img {
             margin-top: 106px;
             width: 100%;
-            height: 545px;
+            // height: 545px;
+            height: 70.50%;
             object-fit: cover;
           }
         }
@@ -462,7 +467,7 @@ body {
             border: 1px solid #707070;
             padding: 19px 0px 19px 0px;
           }
-             & a,a:visited,a:hover,a:active{
+              & a,a:visited,a:hover,a:active{
               color: inherit;
             }
         }
@@ -472,6 +477,7 @@ body {
           img {
             width: 100%;
             height: 545px;
+            height: 81.71%;
             object-fit: cover;
           }
         }
@@ -495,6 +501,7 @@ body {
           img {
             width: 100%;
             height: 545px;
+            height: 87.48%;
             object-fit: cover;
           }
         }
@@ -580,7 +587,7 @@ body {
       height: auto;
 
       .item-image img {
-        width: 331px;
+        width: 100%;
         height:209px;
         object-fit: cover;
       }
@@ -673,6 +680,7 @@ body {
       grid-auto-rows: 130px;
       column-gap: 46px;
       row-gap: 20px;
+      padding: 0 10px 0 10px;
         .nl_item{
           padding-top: 15px;
           background: #F6F6F6 0% 0% no-repeat padding-box;
@@ -740,24 +748,34 @@ body {
     .access_contents {
       .access_upper_contents {
         display: flex;
-        justify-content: center;
-        margin-top: 100px;
+        // justify-content: center;
+        margin-top: 67px;
+        // height: 370px;
+        height: 26.81%;
         .upper_left_contents {
-          // width: 55.59%;
+          width: 53.44%;
+          max-width: 100%;
+          text-align: right;
           & img {
+            // position: absolute;
             width: 656px;
-            height: 370px;
+            // width: 63.94%;
+            max-width: 100%;
+            // height: 370px;
+            height: 100%;
+            max-height: 100%;
             object-fit: cover;
           }
         }
         .upper_right_contents {
           margin-left: 83px;
           & h2 {
+            margin-top: 20px;
             font-size: 16px;
             margin-bottom: 24px;
           }
           & p{
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 24px;
           }
         }

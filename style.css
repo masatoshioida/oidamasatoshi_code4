@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   width: 100%;
+  height: 7318px;
   margin: 0 auto;
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 }
@@ -136,6 +137,8 @@ body a {
   height: 100vh;
   position: absolute;
   width: 100%;
+  padding: 0;
+  max-width: 2560px !important;
 }
 
 .header .header-inner .modal .modal__content {
@@ -223,7 +226,7 @@ body a {
 .top_contents {
   width: 100%;
   margin: 0 auto;
-  height: 1079px;
+  height: 14.74%;
   overflow: hidden;
   position: relative;
 }
@@ -367,7 +370,7 @@ body a {
 .main_contents .main_container .first_content .first_content_wrapper .fl_content img {
   margin-top: 106px;
   width: 100%;
-  height: 545px;
+  height: 70.50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -470,6 +473,7 @@ body a {
 .main_contents .main_container .second_content .second_content_wrapper .sr_content img {
   width: 100%;
   height: 545px;
+  height: 81.71%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -496,6 +500,7 @@ body a {
 .main_contents .main_container .third_content .third_content_wrapper .tl_content img {
   width: 100%;
   height: 545px;
+  height: 87.48%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -584,7 +589,7 @@ body a {
 }
 
 .plan .plan_inner .item .item-image img {
-  width: 331px;
+  width: 100%;
   height: 209px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -673,6 +678,7 @@ body a {
   -webkit-column-gap: 46px;
           column-gap: 46px;
   row-gap: 20px;
+  padding: 0 10px 0 10px;
 }
 
 .news .news_container .news_list_wrapper .tab-content.show .nl_item {
@@ -735,15 +741,21 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 100px;
+  margin-top: 67px;
+  height: 26.81%;
+}
+
+.access .access_inner .access_contents .access_upper_contents .upper_left_contents {
+  width: 53.44%;
+  max-width: 100%;
+  text-align: right;
 }
 
 .access .access_inner .access_contents .access_upper_contents .upper_left_contents img {
   width: 656px;
-  height: 370px;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -753,12 +765,13 @@ body a {
 }
 
 .access .access_inner .access_contents .access_upper_contents .upper_right_contents h2 {
+  margin-top: 20px;
   font-size: 16px;
   margin-bottom: 24px;
 }
 
 .access .access_inner .access_contents .access_upper_contents .upper_right_contents p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 24px;
 }
 
