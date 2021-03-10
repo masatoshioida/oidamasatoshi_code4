@@ -1014,5 +1014,43 @@ body a {
     padding: 13px 0 13px 0;
     margin-bottom: 150px;
   }
+  .plan {
+    height: 750px;
+  }
+  .plan .plan_inner {
+    height: 100%;
+  }
+  .plan .plan_inner .plan_title img {
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  .plan .plan_inner .plan_title h2 {
+    font-size: 28px;
+  }
+  .plan .plan_inner .wrapper_grid {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .plan .plan_inner .item {
+    width: calc(33.33333333% - 30px * 2 / 3);
+  }
+  .plan .plan_inner .item .item-image img {
+    height: 200px;
+  }
+  .plan .plan_inner .item .item-info {
+    padding-top: 20px;
+  }
+  .plan .plan_inner .item .item-info br {
+    display: none;
+  }
+  .plan .plan_inner .item .item-info h2 {
+    font-size: 16px;
+  }
+  .plan .plan_inner .item .item-info p {
+    font-size: 14px;
+  }
+  .news {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
