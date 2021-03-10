@@ -207,5 +207,35 @@
 
 
 .news{
-  height: auto;
+  // height: auto;
+  .news_container{
+    .news_title{
+      & img{
+        width: 30px;
+        margin-bottom: 10px;
+      }
+      & h2 {
+        font-size: 28px;
+        margin-top: 0px;
+      }
+    }
+    .news_list_wrapper{
+      .tab{
+        margin-bottom: 25px;
+      }
+
+      .tab-content.show{
+        br{display:none}
+        .nl_item{
+          .nl-info{
+            & h2{
+              margin-top: 20px;
+              font-size: 14px;
+              line-height: 1.7;
+            }
+          }
+        }
+      }
+    }
+  }
 }
