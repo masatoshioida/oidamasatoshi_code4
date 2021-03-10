@@ -221,7 +221,7 @@ body a {
 }
 
 .top_contents {
-  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   height: 1079px;
   overflow: hidden;
@@ -263,10 +263,12 @@ body a {
 }
 
 .introduction {
-  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   height: 681px;
   background: transparent url("images/bg.png") 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: cover;
 }
 
 .introduction .intro_container {
@@ -399,11 +401,14 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: inline-block;
   display: block;
   text-decoration: none;
   border: 1px solid #707070;
   padding: 19px 0px 19px 0px;
+}
+
+.main_contents .main_container .first_content .first_content_wrapper .fr_content a, .main_contents .main_container .first_content .first_content_wrapper .fr_content a:visited, .main_contents .main_container .first_content .first_content_wrapper .fr_content a:hover, .main_contents .main_container .first_content .first_content_wrapper .fr_content a:active {
+  color: inherit;
 }
 
 .main_contents .main_container .second_content {
@@ -452,6 +457,10 @@ body a {
   text-decoration: none;
   border: 1px solid #707070;
   padding: 19px 0px 19px 0px;
+}
+
+.main_contents .main_container .second_content .second_content_wrapper .sl_content a, .main_contents .main_container .second_content .second_content_wrapper .sl_content a:visited, .main_contents .main_container .second_content .second_content_wrapper .sl_content a:hover, .main_contents .main_container .second_content .second_content_wrapper .sl_content a:active {
+  color: inherit;
 }
 
 .main_contents .main_container .second_content .second_content_wrapper .sr_content {
@@ -521,6 +530,10 @@ body a {
   text-decoration: none;
   border: 1px solid #707070;
   padding: 19px 0px 19px 0px;
+}
+
+.main_contents .main_container .third_content .third_content_wrapper .tr_content a, .main_contents .main_container .third_content .third_content_wrapper .tr_content a:visited, .main_contents .main_container .third_content .third_content_wrapper .tr_content a:hover, .main_contents .main_container .third_content .third_content_wrapper .tr_content a:active {
+  color: inherit;
 }
 
 .plan {
@@ -675,9 +688,13 @@ body a {
   margin: 0px 30px 15px 10px;
 }
 
-.news .news_container .news_list_wrapper .tab-content.show .nl_item .nl_info {
-  font-size: 30px;
+.news .news_container .news_list_wrapper .tab-content.show .nl_item .nl-info .time {
+  font-size: 14px;
   margin-bottom: 10px;
+}
+
+.news .news_container .news_list_wrapper .tab-content.show .nl_item .nl-info h2 {
+  font-size: 16px;
   line-height: 2;
 }
 

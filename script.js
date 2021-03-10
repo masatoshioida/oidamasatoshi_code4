@@ -257,5 +257,43 @@ $(function() {
 
     //タブのインデックス番号と同じコンテンツにshowクラスをつけて表示する
     $('.tab-content').eq(index).addClass('show');
+    $('.tab-content').hide().eq(index).fadeIn();
   });
+});
+
+
+// フワッとアニメーション
+// $(function(){
+//    $(window).on('load scroll', function() {
+//       var winScroll = $(window).scrollTop();
+//       var winHeight = $(window).height();
+//       var scrollPos = winScroll + (winHeight * 0.8);
+
+//       $(".show").each(function() {
+//          if($(this).offset().top < scrollPos) {
+//             $(this).css({opacity: 1, transform: 'translate(0, 0)'});
+//          }
+//       });
+//    });
+// });
+
+
+$(function(){
+	$(window).scroll(function (){
+		$('.fadeInBlock').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			var speed = 1000;
+			if(scroll > elemPos - windowHeight){
+				$(this).find('h3').addClass('scrollin');
+				$(this).delay(speed).queue(function(){
+					$(this).find('p').addClass('scrollin').dequeue();
+					$(this).find('p').delay(speed).queue(function(){
+						$(this).find('a').addClass('scrollin').dequeue();
+					});
+				});
+			}
+		});
+	});
 });
