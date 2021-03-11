@@ -1,3 +1,51 @@
+.introduction{
+  .intro_container{
+    .intro_wrap{
+      writing-mode: horizontal-tb !important;
+      display: block !important;
+      text-align: center;
+      .first_content{
+        margin-top: 0px;
+        padding-top: 60px;
+        margin-left: 0px !important;
+        .fc{
+          .fc_sentence{
+            font-size: 20px;
+            margin-left: 0px;
+            letter-spacing: 0.1em;
+          }
+          .fc_sentence:nth-child(2){
+            margin-top: 30px;
+          }
+        }
+      }
+      .intro_second_container{
+        font-size: 12px !important;
+        margin-top: 60px;
+        line-height: 1.8;
+        letter-spacing: 0.1em;
+        height: auto;
+        .second_content, .third_content, .forth_content{
+          margin-left: 0px !important;
+          margin-bottom: 30px;
+
+          & p{
+            margin-left: 0px;
+          }
+        }
+      }
+      .fifth_content{
+        margin-top: 60px;
+        font-size: 18px !important;
+        letter-spacing: 0.04em;
+      }
+    }
+
+  }
+}
+
+
+
 .main_contents{
   .main_container{
     .first_content{
@@ -98,6 +146,7 @@
         & h2{
           font-size: 14px !important;
           margin-bottom: 20px;
+          margin-top: 15px;
         }
         & p{
           font-size: 12px !important;
@@ -123,6 +172,9 @@
         display: block;
         .nl_item{
           margin-bottom: 20px;
+          & img{
+            margin-right: 15px;
+          }
           .nl-info{
             & h2{
               line-height: 1.4 !important;

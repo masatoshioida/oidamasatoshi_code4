@@ -876,6 +876,45 @@ body a {
 }
 
 @media (max-width: 768px) {
+  .introduction .intro_container .intro_wrap {
+    -webkit-writing-mode: horizontal-tb !important;
+        -ms-writing-mode: lr-tb !important;
+            writing-mode: horizontal-tb !important;
+    display: block !important;
+    text-align: center;
+  }
+  .introduction .intro_container .intro_wrap .first_content {
+    margin-top: 0px;
+    padding-top: 60px;
+    margin-left: 0px !important;
+  }
+  .introduction .intro_container .intro_wrap .first_content .fc .fc_sentence {
+    font-size: 20px;
+    margin-left: 0px;
+    letter-spacing: 0.1em;
+  }
+  .introduction .intro_container .intro_wrap .first_content .fc .fc_sentence:nth-child(2) {
+    margin-top: 30px;
+  }
+  .introduction .intro_container .intro_wrap .intro_second_container {
+    font-size: 12px !important;
+    margin-top: 60px;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    height: auto;
+  }
+  .introduction .intro_container .intro_wrap .intro_second_container .second_content, .introduction .intro_container .intro_wrap .intro_second_container .third_content, .introduction .intro_container .intro_wrap .intro_second_container .forth_content {
+    margin-left: 0px !important;
+    margin-bottom: 30px;
+  }
+  .introduction .intro_container .intro_wrap .intro_second_container .second_content p, .introduction .intro_container .intro_wrap .intro_second_container .third_content p, .introduction .intro_container .intro_wrap .intro_second_container .forth_content p {
+    margin-left: 0px;
+  }
+  .introduction .intro_container .intro_wrap .fifth_content {
+    margin-top: 60px;
+    font-size: 18px !important;
+    letter-spacing: 0.04em;
+  }
   .main_contents .main_container .first_content .first_content_wrapper .fl_content img {
     width: 92% !important;
   }
@@ -947,6 +986,7 @@ body a {
   .plan .plan_inner .item .item-info h2 {
     font-size: 14px !important;
     margin-bottom: 20px;
+    margin-top: 15px;
   }
   .plan .plan_inner .item .item-info p {
     font-size: 12px !important;
@@ -965,6 +1005,9 @@ body a {
   }
   .news .news_container .news_list_wrapper .tab-content.show .nl_item {
     margin-bottom: 20px;
+  }
+  .news .news_container .news_list_wrapper .tab-content.show .nl_item img {
+    margin-right: 15px;
   }
   .news .news_container .news_list_wrapper .tab-content.show .nl_item .nl-info h2 {
     line-height: 1.4 !important;
