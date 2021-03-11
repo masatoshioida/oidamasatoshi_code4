@@ -876,6 +876,41 @@ body a {
 }
 
 @media (max-width: 768px) {
+  .plan {
+    height: auto !important;
+  }
+  .plan .plan_inner {
+    height: auto;
+  }
+  .plan .plan_inner .plan_title {
+    margin-bottom: 50px;
+  }
+  .plan .plan_inner .plan_title h2 {
+    font-size: 22px !important;
+  }
+  .plan .plan_inner .wrapper_grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 86% !important;
+  }
+  .plan .plan_inner .item {
+    display: block;
+    height: auto;
+    width: 100% !important;
+    margin-bottom: 50px;
+  }
+  .plan .plan_inner .item .item-info h2 {
+    font-size: 14px !important;
+    margin-bottom: 20px;
+  }
+  .plan .plan_inner .item .item-info p {
+    font-size: 12px !important;
+    width: 60%;
+    line-height: 1.5;
+  }
   .news {
     height: auto;
   }
@@ -883,11 +918,14 @@ body a {
     height: auto;
   }
   .news .news_container .news_list_wrapper .tab-content.show {
-    padding: 10px 20px 70px 20px;
+    padding: 10px 30px 70px 30px;
     display: block;
   }
   .news .news_container .news_list_wrapper .tab-content.show .nl_item {
     margin-bottom: 20px;
+  }
+  .news .news_container .news_list_wrapper .tab-content.show .nl_item .nl-info h2 {
+    line-height: 1.4 !important;
   }
   .access {
     height: auto;
@@ -896,13 +934,13 @@ body a {
     height: auto;
   }
   .access .access_inner .access_contents .access_upper_contents .upper_left_contents {
-    width: 80%;
+    width: 86%;
   }
   .access .access_inner .access_contents .access_upper_contents .upper_left_contents img {
-    width: 80%;
+    width: 86%;
   }
   .access .access_inner .access_contents .access_upper_contents .upper_right_contents {
-    width: 80%;
+    width: 86%;
   }
   .access .access_inner .access_contents .access_upper_contents .upper_right_contents .details h2 {
     font-size: 14px !important;
@@ -916,7 +954,7 @@ body a {
     line-height: 1.8;
   }
   .access .access_inner .access_contents .access_bottom_contents {
-    width: 80%;
+    width: 86%;
     margin-left: auto !important;
     margin-right: auto !important;
   }
