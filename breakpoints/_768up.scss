@@ -1,29 +1,38 @@
+
 .header{
   height: 60px;
   .header-inner{
     position: relative;
     .logo{
       img{
-        width: 150px;
+        width: 120px;
       }
     }
     .logo2.headerScroll{
       img{
-        width: 150px;
-        top: 16px;
+        width: 120px;
+        top: 20px;
       }
     }
     .globalNav{
-        transform: translateX(100%);
+        // transform: translateX(100%);
         position: fixed;
-        top: 0;
-        right: -100%;
-        width: 200px;
+        opacity: 0;
+        top: 0px;
+        color: #fff;
+        background: rgba(151,143,16,0.9);
+        text-align: center;
+        width: 100%;
+        opacity: 0;
+        transition: opacity .6s ease,visibility .6s ease;
+        // right: -100%;
+        left: 0;
+        // width: 100%;
         height: 100%;
-        padding-top: 95px;
-        background:#978F10;
-        font-size: 1.6rem;
-        transition: 2s;
+        padding-top: 195px;
+        // background:#978F10;
+        font-size: 24px;
+        // transition: .2s;
         z-index: 3;
       .topics{
           flex-direction: column;
@@ -43,11 +52,11 @@
       margin: 0 0 0 auto;
       display: inline-block;
       position: relative;
-      width: 36px;
-      height: 30px;
+      width: 26px;
+      height: 26px;
       cursor: pointer;
-      -webkit-transition: all 0.4s;
-      transition: all 0.4s;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       z-index: 4;
         & span{
           position: absolute;
@@ -56,8 +65,9 @@
           display: inline-block;
           background: #fff;
           border-radius: 10px;
-          transition: all 0.4s;
-          -webkit-transition: all 0.4s;
+          transition: all 0.4s ease-in-out;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: 0.3s ease-in-out;
         }
         & span:nth-child(1){
           top: 20%;
@@ -84,14 +94,13 @@
       }
 
       .globalNav.slide-in{
-        // position: absolute;
-        right: 0;
-        transform: translateX(0);
-        transition: .6s;
+        opacity: 100;
+
         .topics{
           flex-direction: column;
-          font-size: 2.4rem;
           text-align: center;
+          font-size: 23px;
+          letter-spacing: 4px;
           a{
             margin-right: 0;
           }
@@ -101,14 +110,26 @@
           }
         }
       }
-      // a.button{
-      //   display: none;
-      // }
+
       .reserve{
         position: absolute;
-        top: 600px;
-        left: 0%;
+        // top: 600px;
+        left: 50%;
         margin: 0px;
+        a.js-modal-open{
+          width: 100px;
+          height: 30px;
+          & img {
+            margin-left: 7px;
+            width: 18px;
+            height: 18px;
+          }
+          & p{
+            font-size: 12px;
+            padding: 9px 0 11px 0;
+            margin-left: 10px;
+          }
+        }
       }
     }
   }
@@ -122,7 +143,7 @@
     height: 100%;
   }
   .tc{
-    top: 180px;
+    top: 230px;
     left: 65%;
     .top_contents_sentence{
       font-size: 22px !important;
@@ -313,6 +334,9 @@
   .news_container{
     height: auto;
     .news_list_wrapper{
+      .tab{
+        font-size: 14px;
+      }
       .tab-content.show{
         padding: 10px 30px 70px 30px;
         display: block;
@@ -328,6 +352,9 @@
           }
         }
       }
+      // .tab_content{
+      //   display: block;
+      // }
     }
   }
 }
