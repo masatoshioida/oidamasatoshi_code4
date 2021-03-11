@@ -1,7 +1,14 @@
 .top_contents{
-  height: 700px;
+  height: 850px;
   .top_image{
     display: none;
+    height: 850px;
+    background-position: 50% 80%;
+  }
+  .tc{
+    .top_contents_sentence{
+      font-size: 28px;
+    }
   }
 }
 
