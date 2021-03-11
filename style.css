@@ -876,6 +876,48 @@ body a {
 }
 
 @media (max-width: 768px) {
+  .main_contents .main_container .first_content .first_content_wrapper .fl_content img {
+    width: 92% !important;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content {
+    margin-top: 80px !important;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content h3 {
+    font-size: 20px !important;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content p {
+    font-size: 12px !important;
+  }
+  .main_contents .main_container .first_content .first_content_wrapper .fr_content a.button {
+    font-size: 12px !important;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content {
+    margin-top: 80px !important;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content h3 {
+    font-size: 20px !important;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content p {
+    font-size: 12px !important;
+  }
+  .main_contents .main_container .second_content .second_content_wrapper .sl_content a.button {
+    font-size: 12px !important;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tl_content img {
+    width: 92% !important;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content {
+    margin-top: 80px !important;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content h3 {
+    font-size: 20px !important;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content p {
+    font-size: 12px !important;
+  }
+  .main_contents .main_container .third_content .third_content_wrapper .tr_content a.button {
+    font-size: 12px !important;
+  }
   .plan {
     height: auto !important;
   }
@@ -1088,7 +1130,7 @@ body a {
     margin-bottom: 40px;
   }
   .main_contents .main_container .second_content .second_content_wrapper .sl_content p {
-    font-size: 14;
+    font-size: 14px;
     margin-bottom: 40px;
   }
   .main_contents .main_container .second_content .second_content_wrapper .sl_content a.button {
@@ -1126,7 +1168,7 @@ body a {
     margin-bottom: 40px;
   }
   .main_contents .main_container .third_content .third_content_wrapper .tr_content p {
-    font-size: 14;
+    font-size: 14px;
     margin-bottom: 40px;
   }
   .main_contents .main_container .third_content .third_content_wrapper .tr_content a.button {
