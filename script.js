@@ -181,11 +181,10 @@ $(function() {
   let header     = $('.header');
   let headerLogo = $('.logo');
   let navLink    = $('.list_item');
-  // let navSpan    = $('.global-nav__list--item').find('span');
-  // let navContact = $('.contact');
+  let gnavBtn    = $('.gnav-btn');
 
   $(window).scroll(function () {
-    // 画面をトップから100px以上スクロールした時
+    // 画面をトップから30px以上スクロールした時
     if ($(this).scrollTop() >= 30) {
       // ヘッダーのbackground-colorを白に変更し、boxshadowをつける
       header.css({'background':'rgba(250, 250, 250, 1)'});
@@ -193,25 +192,17 @@ $(function() {
       headerLogo.attr('src', 'images/sub-header-logo.png').css('width', 200);
       // aタグで囲った文字を黒に変更
       navLink.find('a').css('color', '#333');
+      // ハンバーガーメニューを黒色に変更
+      gnavBtn.find('span').css({'background':'rgba(0, 0, 0, 1)'});
+
       // spanタグで囲った文字を黒に変更
       // navSpan.css('color', '#333');
-      // CONTACTとお問い合わせの文字色のみ、白のまま固定
-      // navContact.find('a, span').css('color', '#fff');
-      // liタグにホバーした際、文字色を変更
-    //   // navLink.hover(
-    //   //   function() {
-    //   //     $(this).find('a, span').css('color', '#fff');
-    //   //   },
-    //   //   function() {
-    //   //     $(this).find('a, span').css('color', '#333');
-    //   //     navContact.find('a, span').css('color', '#fff');
-    //   //   }
-    // );
     } else {
       // 画面がトップから100px以下の時は、上記と逆の処理を行う
       header.css({'background':'rgba(250, 250, 250, 0)'});
       headerLogo.attr('src', 'images/top-header-logo.png').css('width', 200);
       navLink.find('a').css('color', '#fff');
+      gnavBtn.find('span').css({'background':'rgba(250, 250, 250, 1)'});
       // navSpan.css('color', '#fff');
       // navLink.hover(
       //   function() {
