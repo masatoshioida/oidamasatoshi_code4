@@ -276,9 +276,9 @@
           margin-right: auto;
           width: 100%;
           text-align: center;
-          & img{
-            width: auto;
-          }
+          // & img{
+          //   width: auto;
+          // }
         }
         .upper_right_contents{
           padding-top: 80px;
@@ -311,7 +311,8 @@
         margin: 80px 50px 0px 50px;
         padding-bottom: 80px;
         iframe{
-          width: 86%;
+          max-width: 100%;
+          // width: 86%;
         }
       }
     }
