@@ -1,0 +1,121 @@
+.top_contents{
+  .title{
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+.main_contents{
+  height: auto;
+  .main_container{
+    height: auto;
+    padding-bottom: 170px;
+    .mc{
+      .pan{
+        font-size: 14px;
+      }
+      .mc_sentence{
+        padding-top: 88px;
+        font-size: 14px;
+        line-height: 2.2;
+      }
+    }
+
+    .first_content{
+      height: 800px;
+      .first_content_wrapper{
+        height: 100%;
+        grid-template-rows: 13.01% 50.48% 36.51%;
+        grid-template-columns: 11.1% 68.39% 20.51%;
+        .fl_content{
+          img{
+            height: 100%;
+            max-height: none;
+          }
+        }
+        .fr_content{
+          padding-top: 465px;
+          padding-left: 90px;
+          & h3{
+            font-size: 22px;
+            margin-bottom: 50px;
+          }
+          // p.attention{
+          //   font-size: 12px;
+          // }
+
+          & p{
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .second_content{
+      height: 800px;
+      margin-top: 170px;
+      .second_content_wrapper{
+        height: 100%;
+        grid-template-rows: 13.01% 50.48% 36.51%;
+        grid-template-columns: 20.51% 68.39% 11.1%;
+        .sl_content{
+          padding-top: 465px;
+          padding-left: 23%;
+          & h3{
+            font-size: 22px;
+            margin-bottom: 50px;
+          }
+
+          // & p.attention{
+          //   font-size: 12px;
+          // }
+
+          & p{
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+        .sr_content{
+          img{
+            height:100%;
+            max-height: none;
+          }
+        }
+      }
+    }
+    .third_content{
+      height: 800px;
+      margin-top: 170px;
+      .third_content_wrapper{
+        height: 100%;
+        grid-template-rows: 13.01% 50.48% 36.51%;
+        grid-template-columns: 11.1% 68.39% 20.51%;
+        .tl_content{
+          img{
+            height: 100%;
+            max-height: none;
+          }
+        }
+        .tr_content{
+          padding-top: 460px;
+          padding-left: 90px;
+          & h3{
+            font-size: 22px;
+            margin-bottom: 45px;
+          }
+          // p.attention{
+          //   font-size: 12px;
+          // }
+
+          & p{
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "breakpoints/dining/dining";
+
+@media(max-width:768px){
+  @import "breakpoints/dining/768up_dining";
+}
+
+@media(max-width:1024px) {
+  @import "breakpoints/dining/1024up_dining";
+}
