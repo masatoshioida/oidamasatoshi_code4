@@ -7,3 +7,6 @@
 @media(max-width:1024px) {
   @import "breakpoints/spa/1024up_spa";
 }
+@media(min-width:1920px) {
+  @import "breakpoints/spa/1920up_spa";
+}

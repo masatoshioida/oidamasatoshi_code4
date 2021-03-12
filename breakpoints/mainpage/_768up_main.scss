@@ -2,14 +2,17 @@
 .header{
   height: 60px;
   .header-inner{
+    padding: 0px;
     position: relative;
     .logo{
       img{
+        margin-left: 20px;
         width: 120px;
       }
     }
     .logo2.headerScroll{
       img{
+        // margin-left: 20px;
         width: 120px;
         top: 20px;
       }
@@ -131,6 +134,40 @@
     //       }
     //     }
     //   }
+      .modal{
+        .modal__bg{
+          left: 0% !important;
+        }
+        .modal__content{
+            left: 50% !important;
+            max-width: 550px;
+            width: 80%;
+          .modal__content__title{
+            & h2{
+              font-size: 16px;
+              width: 92%;
+            }
+            & img{
+              width: 14px;
+              height: 14px;
+            }
+          }
+          form{
+            padding-left: 10px;
+            padding-right: 11px;
+            label{
+              font-size: 12px;
+            }
+            p{
+              font-size: 12px;
+              line-height: 1.5;
+              & .sp-br{
+                display: inline;
+              }
+            }
+          }
+        }
+      }
     }
   }
 

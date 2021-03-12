@@ -99,11 +99,12 @@ body {
         position: absolute;
         width: 100%;
         padding: 0;
+        left: -1.5%;
         max-width: 2560px !important;
       }
       .modal__content{
         background: #fff;
-        left: 50%;
+        left: 49%;
         padding-left: 22px;
         padding-right: 22px;
         padding-top: 20px;
@@ -161,6 +162,9 @@ body {
           p{
             margin-top: 14px;
             margin-bottom: 14px;
+            & .sp-br{
+              display: none;
+            }
           }
         }
       }

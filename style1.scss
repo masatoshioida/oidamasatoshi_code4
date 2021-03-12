@@ -7,3 +7,7 @@
 @media(max-width:1024px) {
   @import "breakpoints/room/1024up_room";
 }
+
+@media(min-width:1920px) {
+  @import "breakpoints/room/1920up_room";
+}

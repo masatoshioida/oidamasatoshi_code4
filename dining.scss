@@ -7,3 +7,7 @@
 @media(max-width:1024px) {
   @import "breakpoints/dining/1024up_dining";
 }
+
+@media(min-width:1920px) {
+  @import "breakpoints/dining/1920up_dining";
+}

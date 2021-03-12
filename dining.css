@@ -116,12 +116,13 @@ body a {
   position: absolute;
   width: 100%;
   padding: 0;
+  left: -1.5%;
   max-width: 2560px !important;
 }
 
 .header .header-inner .modal .modal__content {
   background: #fff;
-  left: 50%;
+  left: 49%;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 20px;
@@ -199,6 +200,10 @@ body a {
 .header .header-inner .modal .modal__content form p {
   margin-top: 14px;
   margin-bottom: 14px;
+}
+
+.header .header-inner .modal .modal__content form p .sp-br {
+  display: none;
 }
 
 .top_contents {
@@ -551,10 +556,42 @@ body a {
     height: 60px;
   }
   .header .header-inner {
+    padding: 0px;
     position: relative;
   }
   .header .header-inner .logo img {
     width: 120px;
+    margin-left: 20px;
+  }
+  .header .header-inner .modal .modal__bg {
+    left: 0% !important;
+  }
+  .header .header-inner .modal .modal__content {
+    left: 50% !important;
+    max-width: 550px;
+    width: 80%;
+  }
+  .header .header-inner .modal .modal__content .modal__content__title h2 {
+    font-size: 16px;
+    width: 92%;
+  }
+  .header .header-inner .modal .modal__content .modal__content__title img {
+    width: 14px;
+    height: 14px;
+  }
+  .header .header-inner .modal .modal__content form {
+    padding-left: 10px;
+    padding-right: 11px;
+  }
+  .header .header-inner .modal .modal__content form label {
+    font-size: 12px;
+  }
+  .header .header-inner .modal .modal__content form p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .header .header-inner .modal .modal__content form p .sp-br {
+    display: inline;
   }
   .top_contents .title {
     font-size: 24px !important;
@@ -667,6 +704,12 @@ body a {
 }
 
 @media (max-width: 1024px) {
+  .header .header-inner .modal .modal__bg {
+    left: -2%;
+  }
+  .header .header-inner .modal .modal__content {
+    left: 48%;
+  }
   .top_contents .title {
     font-size: 28px;
   }
@@ -764,6 +807,42 @@ body a {
   .main_contents .main_container .third_content .third_content_wrapper .tr_content p {
     font-size: 14px;
     margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header .header-inner .modal .modal__bg {
+    left: -1% !important;
+  }
+  .header .header-inner .modal .modal__content {
+    left: 50% !important;
+    height: 900px;
+    width: 700px;
+  }
+  .header .header-inner .modal .modal__content .modal__content__title h2 {
+    font-size: 28px;
+    padding-top: 50px;
+  }
+  .header .header-inner .modal .modal__content .modal__content__title img {
+    width: 20px;
+    height: 20px;
+  }
+  .header .header-inner .modal .modal__content form {
+    padding-left: 50px;
+    padding-right: 51px;
+  }
+  .header .header-inner .modal .modal__content form label {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .header .header-inner .modal .modal__content form #name, .header .header-inner .modal .modal__content form #mail, .header .header-inner .modal .modal__content form #plan, .header .header-inner .modal .modal__content form #time {
+    height: 40px;
+  }
+  .header .header-inner .modal .modal__content form p {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=dining.css.map */
