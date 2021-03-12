@@ -24,7 +24,8 @@ body {
   position: fixed;
   transition: 0.2s;
   .header-inner {
-    max-width: 1920px;
+    width: 100%;
+    // max-width: 1920px;
     margin: 0 auto;
     height: 100%;
     padding: 0 20px;
@@ -443,7 +444,7 @@ body {
 
         .sl_content {
           margin-top: 53px;
-          margin-left: 21.25%;
+          margin-left: 19.25%;
           margin-right: 9.06%;
           & h3 {
             line-height: 1.9;
@@ -455,6 +456,7 @@ body {
             line-height: 2.3;
             font-size: 16px;
             margin-bottom: 43px;
+            width: 292px;
           }
           a.button {
             width: 200px;

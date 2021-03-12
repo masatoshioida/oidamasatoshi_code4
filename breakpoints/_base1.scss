@@ -1,6 +1,3 @@
-$txcolor: #333333;
-$tifont: Hiragino Kaku Gothic ProN;
-
 body {
   width: 100%;
   margin: 0 auto;
@@ -15,21 +12,24 @@ body {
 .header {
   width: 100%;
   height: 80px;
+  z-index: 20;
   position: fixed;
-  background-color: #ffffff;
-  z-index: 10;
+  transition: 0.2s;
   .header-inner {
-    max-width: 1920px;
+    width: 100%;
+    // max-width: 1920px;
     margin: 0 auto;
     height: 100%;
     padding: 0 20px;
     align-items: center;
     display: flex;
+    background: #fff;
     // justify-content: space-between;
 
     .logo {
       display: flex;
       align-items: center;
+      // transition: 0.2s;
       & a {
         text-decoration: none;
       }
@@ -39,20 +39,22 @@ body {
       }
     }
 
+
     .globalNav {
       display: block;
 
       .topics {
         display: flex;
-        color: #000000;
+        color: #000;
         margin-left: 120px;
 
-        & a {
+        a {
           margin-right: 30px;
           font-size: 16px;
-          color: #000000;
+          color: #000;
           text-align: left;
           display: inline-block;
+          transition: 0.2s;
         }
         // & a:last-child{
         //   margin-right: 0px;
@@ -61,7 +63,7 @@ body {
     }
     .reserve{
       margin: 0 0 0 auto;
-      a.button {
+      a.js-modal-open {
         display: flex;
         // display: inline-block;
         color: #ffffff;
@@ -85,11 +87,90 @@ body {
         }
       }
     }
+    .modal{
+      display: none;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      .modal__bg{
+        background: rgba(0,0,0,0.8);
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        max-width: 2560px !important;
+      }
+      .modal__content{
+        background: #fff;
+        left: 50%;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 550px;
+        height: 600px;
+        .modal__content__title{
+          display: flex;
+          & h2{
+            font-size: 20px;
+            // margin-top: 29px;
+            margin: 9px auto;
+            padding-bottom: 40px;
+            width: 82%;
+            text-align: center;
+            border-bottom: 1px solid #e7e7e7;
+          }
+          & img{
+            width: 18px;
+            height: 18px;
+
+          }
+        }
+        form{
+          display: block;
+          padding-left: 40px;
+          padding-right: 41px;
+          height: 100%;
+          .box{
+            display: flex;
+            flex-direction: column;
+          }
+          label{
+            font-size: 16px;
+            display: flex;
+            margin-top: 14px;
+            margin-bottom: 14px;
+          }
+          #name,#mail,#plan,#time{
+            width: 100%;
+            height: 32px;
+            border: 1px solid #e7e7e7;
+          }
+          #js-submit{
+            display: block;
+            align-items: center;
+            width: 198px;
+            height: 42px;
+            margin: 64px auto;
+            border: 1px solid #707070;
+          }
+
+          p{
+            margin-top: 14px;
+            margin-bottom: 14px;
+          }
+        }
+      }
+    }
   }
 }
 
 .top_contents {
-  max-width: 1920px;
+  width: 100%;
+  // max-width: 1920px;
   margin: 0 auto;
   height: 580px;
   background-image: url(images/oheya-header.png);
@@ -319,7 +400,7 @@ body {
 .footer {
   width: 100%;
   height: 582px;
-  background-color: powderblue;
+  // background-color: powderblue;
   background: transparent url('images/bg3.png') 0% 0% no-repeat padding-box;
   background-position: center;
   background-size: cover;
@@ -341,9 +422,9 @@ body {
         display: block;
         font-size: 18px;
         letter-spacing: 0.5em;
-        // & a:nth-child(3){
-        //   margin-left: 0px;
-        // }
+      }
+      & a,a:visited,a:hover,a:active{
+        color: inherit;
       }
     }
 
@@ -374,12 +455,13 @@ body {
 
         }
       }
-      // & p.post-num{
-      //   display: inline;
-      // }
-      // & p.calling2{
-      //   display: inline;
-      // }
+      .tel-wrap{
+        display: flex;
+        justify-content: center;
+        & p{
+          margin-left: 20px;
+        }
+      }
     }
   }
 
