@@ -1,0 +1,9 @@
+@import "breakpoints/spa/spa";
+
+@media(max-width:768px){
+  @import "breakpoints/spa/768up_spa";
+}
+
+@media(max-width:1024px) {
+  @import "breakpoints/spa/1024up_spa";
+}
