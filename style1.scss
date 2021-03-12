@@ -1,1 +1,13 @@
-@import "breakpoints/base1";
+@import "breakpoints/underpage/base1";
+
+// @media(max-width:768px){
+//   @import "breakpoints/underpage/768up_underpage";
+// }
+
+@media(max-width:1024px) {
+  @import "breakpoints/underpage/1024up_underpage";
+}
+
+// @media(min-width:1900px) {
+//   @import "breakpoints/1900up";
+// }

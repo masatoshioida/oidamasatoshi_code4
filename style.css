@@ -270,7 +270,7 @@ body a {
   width: 100%;
   margin: 0 auto;
   height: 681px;
-  background: transparent url("images/bg.png") 0% 0% no-repeat padding-box;
+  background: transparent url("../images/bg.png") 0% 0% no-repeat padding-box;
   background-position: center;
   background-size: cover;
 }
