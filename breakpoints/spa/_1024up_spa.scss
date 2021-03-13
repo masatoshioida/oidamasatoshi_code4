@@ -117,8 +117,16 @@
           width: 90%;
           padding-bottom: 90px;
           .spa_detail{
+            & th{
+              width: 58px;
+            }
             & th, td{
               font-size: 13px;
+            }
+            & td{
+              br{display:none}
+              letter-spacing: 0.1em;
+              // padding-left: 60px;
             }
           }
         }

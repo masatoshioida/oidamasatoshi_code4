@@ -417,13 +417,19 @@ body {
             height: 72px;
           }
 
-          & th:nth-child(3){
-            padding-bottom: 17px;
-          }
           & th {
             text-align: left;
           }
 
+          // & th:nth-child(3){
+          //     vertical-align: initial;
+          //     padding-top: 16px;
+          //   .br{
+          //     & span {
+          //       display: none;
+          //     }
+          //   }
+          // }
           & th,
           td {
             font-size: 15px;
@@ -435,7 +441,7 @@ body {
 
           & td {
             text-align: left;
-            padding-left: 60px;
+            padding-left: 160px;
           }
         }
       }
