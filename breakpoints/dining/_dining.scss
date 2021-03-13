@@ -462,10 +462,12 @@ body {
       text-orientation: upright;
       padding-top: 64px;
       padding-bottom: 96px;
+      height: 241px;
+      width: 156px;
       & a {
-        margin-left: 34px;
-        margin-right: 34px;
-        display: block;
+        margin-left: 17px;
+        margin-right: 17px;
+        display: inline-block;
         font-size: 18px;
         letter-spacing: 0.5em;
       }

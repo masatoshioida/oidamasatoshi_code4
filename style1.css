@@ -503,13 +503,15 @@ body a {
           writing-mode: vertical-rl;
   text-orientation: upright;
   padding-top: 64px;
+  height: 241px;
   padding-bottom: 96px;
+  width: 156px;
 }
 
 .footer .upper_footer .footer_menu a {
-  margin-left: 34px;
-  margin-right: 34px;
-  display: block;
+  margin-left: 17px;
+  margin-right: 17px;
+  display: inline-block;
   font-size: 18px;
   letter-spacing: 0.5em;
 }
@@ -808,6 +810,7 @@ body a {
   .footer .upper_footer .footer_menu {
     padding-top: 50px;
     padding-bottom: 100px;
+    width: 144px;
   }
   .footer .upper_footer .footer_menu a {
     font-size: 14px;

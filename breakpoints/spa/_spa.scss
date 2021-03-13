@@ -472,14 +472,16 @@ body {
 
     .footer_menu {
       margin: 0 auto;
+      height: 241px;
       writing-mode: vertical-rl;
       text-orientation: upright;
       padding-top: 64px;
+      width: 156px;
       padding-bottom: 96px;
       & a {
-        margin-left: 34px;
-        margin-right: 34px;
-        display: block;
+        margin-left: 17px;
+        margin-right: 17px;
+        display: inline-block;
         font-size: 18px;
         letter-spacing: 0.5em;
       }
