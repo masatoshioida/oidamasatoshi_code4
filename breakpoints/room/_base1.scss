@@ -226,6 +226,15 @@ body {
       .pan{
         font-size: 16px;
         padding-top: 36px;
+        display: flex;
+
+        & a,
+        a:visited,
+        a:hover,
+        a:active {
+        cursor: pointer;
+        color: inherit;
+        }
       }
       .mc_sentence{
         width: 100%;

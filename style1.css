@@ -246,6 +246,17 @@ body a {
 .main_contents .main_container .mc .pan {
   font-size: 16px;
   padding-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_contents .main_container .mc .pan a,
+.main_contents .main_container .mc .pan a:visited,
+.main_contents .main_container .mc .pan a:hover,
+.main_contents .main_container .mc .pan a:active {
+  cursor: pointer;
+  color: inherit;
 }
 
 .main_contents .main_container .mc .mc_sentence {
