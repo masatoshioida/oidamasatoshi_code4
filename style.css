@@ -94,6 +94,13 @@ body a {
   transition: 0.2s;
 }
 
+.header .header-inner .reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
 .header .header-inner .reserve {
   margin: 0 0 0 auto;
 }
@@ -1015,8 +1022,17 @@ body a {
     margin-right: 0;
     margin-bottom: 40px;
   }
+  .header .header-inner .reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 auto;
+  }
   .header .header-inner .gnav-btn {
-    margin: 0 20px 0 auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 20px 0 10px;
     display: inline-block;
     position: relative;
     width: 26px;
@@ -1082,8 +1098,9 @@ body a {
     margin-bottom: 40px;
   }
   .header .header-inner .reserve {
-    position: absolute;
-    left: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     margin: 0px;
   }
   .header .header-inner .reserve a.js-modal-open {

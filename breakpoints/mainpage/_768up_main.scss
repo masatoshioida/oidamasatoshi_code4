@@ -48,8 +48,13 @@
           }
         }
       }
+      .reverse{
+        display: flex;
+        margin: 0 0 0 auto;
+      }
     .gnav-btn{
-      margin: 0 20px 0 auto;
+      order: 2;
+      margin: 0 20px 0 10px;
       display: inline-block;
       position: relative;
       width: 26px;
@@ -113,9 +118,10 @@
       }
 
       .reserve{
-        position: absolute;
+        // position: absolute;
         // top: 600px;
-        left: 50%;
+        // left: 50%;
+        order: 1;
         margin: 0px;
         a.js-modal-open{
           width: 100px;
